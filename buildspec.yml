@@ -1,0 +1,13 @@
+version: 0.2
+
+phases: 
+    build:
+        commands:
+            - echo "Build block"
+            - ls
+            - echo "Running tests to check if "Congratulations" present in index.html file"
+            - grep "Congratulations" index.html
+    post_build:
+        commands:
+            - echo "Post build phase"
+            
