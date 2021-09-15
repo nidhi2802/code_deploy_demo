@@ -10,4 +10,11 @@ phases:
     post_build:
         commands:
             - echo "Post build phase"
+artifacts:
+    files:
+        - scripts/*.sh
+        - index.html
+        - appspec.yml
+    discard-paths: yes
+
             
